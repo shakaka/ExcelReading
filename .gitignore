@@ -130,5 +130,5 @@ dmypy.json
 
 
 # Test files
-.xls
-.xlsx
+*.xls
+*.xlsx
