@@ -46,6 +46,15 @@ for f in files_xls:
             '(非取樣點)' not in str(ws.cell(row=i, column=9).value)):
                 ws.cell(row=i, column=9).value= xstr(ws.cell(row=i, column=9).value)+'(非取樣點)'
                 print('add')
+#==================trim 16===============================
+        if len(str(ws.cell(row=i, column=6).value)) > 16:
+            ws.cell(row=i, column=6).value = str(ws.cell(row=i, column=6).value)[:16]
+            print('trim')
+
+
+
+
+
     print(i)
 #===================Save back to the excel=============
     wb.save("testFiles/single/"+f)
