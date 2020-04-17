@@ -25,4 +25,4 @@ for ff in searchfiles_xls:
                 if str(wst.cell(row=j, column=20).value) == str(wsf.cell(row=i, column=1).value):
                     wst.cell(row=j, column=20).font=Font(color=RED)
 
-        wbt.save("search_red/To/"+ft+"_modified")
+        wbt.save("search_red/To/"+ft+"_modified.xlsx")
